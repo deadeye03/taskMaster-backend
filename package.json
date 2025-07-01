@@ -1,0 +1,33 @@
+{
+  "name": "taskmaster-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "prisma generate",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "ts-node-dev --respawn src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^6.10.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "prisma": "^6.10.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.7",
+    "eslint": "^9.30.0",
+    "globals": "^16.2.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.35.0"
+  }
+}
